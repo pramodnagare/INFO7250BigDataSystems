@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_info7250_project" default="compile.module.info7250_project">
+  <dirname property="module.info7250_project.basedir" file="${ant.file.module_info7250_project}"/>
+  
+  <property name="module.jdk.home.info7250_project" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.info7250_project" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.info7250_project" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.info7250_project" value="-encoding UTF-8 -source 5 -target 1.5 ${compiler.args}"/>
+  
+  <property name="info7250_project.output.dir" value="${module.info7250_project.basedir}/target/classes"/>
+  <property name="info7250_project.testoutput.dir" value="${module.info7250_project.basedir}/target/test-classes"/>
+  
+  <path id="info7250_project.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="info7250_project.module.production.classpath">
+    <path refid="${module.jdk.classpath.info7250_project}"/>
+    <path refid="library.maven:_org.apache.hadoop:hadoop-core:1.2.1.classpath"/>
+    <path refid="library.maven:_commons-cli:commons-cli:1.2.classpath"/>
+    <path refid="library.maven:_xmlenc:xmlenc:0.52.classpath"/>
+    <path refid="library.maven:_com.sun.jersey:jersey-core:1.8.classpath"/>
+    <path refid="library.maven:_com.sun.jersey:jersey-json:1.8.classpath"/>
+    <path refid="library.maven:_org.codehaus.jettison:jettison:1.1.classpath"/>
+    <path refid="library.maven:_stax:stax-api:1.0.1.classpath"/>
+    <path refid="library.maven:_com.sun.xml.bind:jaxb-impl:2.2.3-1.classpath"/>
+    <path refid="library.maven:_javax.xml.bind:jaxb-api:2.2.2.classpath"/>
+    <path refid="library.maven:_javax.xml.stream:stax-api:1.0-2.classpath"/>
+    <path refid="library.maven:_javax.activation:activation:1.1.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-core-asl:1.7.1.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-jaxrs:1.7.1.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-xc:1.7.1.classpath"/>
+    <path refid="library.maven:_com.sun.jersey:jersey-server:1.8.classpath"/>
+    <path refid="library.maven:_asm:asm:3.1.classpath"/>
+    <path refid="library.maven:_commons-io:commons-io:2.1.classpath"/>
+    <path refid="library.maven:_commons-httpclient:commons-httpclient:3.0.1.classpath"/>
+    <path refid="library.maven:_junit:junit:3.8.1.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging:1.0.3.classpath"/>
+    <path refid="library.maven:_commons-codec:commons-codec:1.4.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-math:2.1.classpath"/>
+    <path refid="library.maven:_commons-configuration:commons-configuration:1.6.classpath"/>
+    <path refid="library.maven:_commons-collections:commons-collections:3.2.1.classpath"/>
+    <path refid="library.maven:_commons-lang:commons-lang:2.4.classpath"/>
+    <path refid="library.maven:_commons-digester:commons-digester:1.8.classpath"/>
+    <path refid="library.maven:_commons-beanutils:commons-beanutils:1.7.0.classpath"/>
+    <path refid="library.maven:_commons-beanutils:commons-beanutils-core:1.8.0.classpath"/>
+    <path refid="library.maven:_commons-net:commons-net:1.4.1.classpath"/>
+    <path refid="library.maven:_org.mortbay.jetty:jetty:6.1.26.classpath"/>
+    <path refid="library.maven:_org.mortbay.jetty:servlet-api:2.5-20081211.classpath"/>
+    <path refid="library.maven:_org.mortbay.jetty:jetty-util:6.1.26.classpath"/>
+    <path refid="library.maven:_tomcat:jasper-runtime:5.5.12.classpath"/>
+    <path refid="library.maven:_tomcat:jasper-compiler:5.5.12.classpath"/>
+    <path refid="library.maven:_org.mortbay.jetty:jsp-api-2.1:6.1.14.classpath"/>
+    <path refid="library.maven:_org.mortbay.jetty:servlet-api-2.5:6.1.14.classpath"/>
+    <path refid="library.maven:_org.mortbay.jetty:jsp-2.1:6.1.14.classpath"/>
+    <path refid="library.maven:_ant:ant:1.6.5.classpath"/>
+    <path refid="library.maven:_commons-el:commons-el:1.0.classpath"/>
+    <path refid="library.maven:_net.java.dev.jets3t:jets3t:0.6.1.classpath"/>
+    <path refid="library.maven:_hsqldb:hsqldb:1.8.0.10.classpath"/>
+    <path refid="library.maven:_oro:oro:2.0.8.classpath"/>
+    <path refid="library.maven:_org.eclipse.jdt:core:3.1.1.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-mapper-asl:1.8.8.classpath"/>
+    <path refid="library.maven:_org.apache.maven.plugins:maven-shade-plugin:3.2.1.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-plugin-api:3.0.classpath"/>
+    <path refid="library.maven:_org.sonatype.sisu:sisu-inject-plexus:1.4.2.classpath"/>
+    <path refid="library.maven:_org.sonatype.sisu:sisu-inject-bean:1.4.2.classpath"/>
+    <path refid="library.maven:_org.sonatype.sisu:sisu-guice:noaop:2.1.7.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-model:3.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-core:3.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-settings:3.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-settings-builder:3.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-repository-metadata:3.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-model-builder:3.0.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-impl:1.7.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-spi:1.7.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-api:1.7.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-util:1.7.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-interpolation:1.14.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-classworlds:2.2.3.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-component-annotations:1.5.5.classpath"/>
+    <path refid="library.maven:_org.sonatype.plexus:plexus-sec-dispatcher:1.3.classpath"/>
+    <path refid="library.maven:_org.sonatype.plexus:plexus-cipher:1.4.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-artifact:3.0.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-utils:3.1.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven.shared:maven-artifact-transfer:0.10.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven.shared:maven-common-artifact-filters:3.0.1.classpath"/>
+    <path refid="library.maven:_org.apache.maven.shared:maven-shared-utils:3.1.0.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-api:1.7.5.classpath"/>
+    <path refid="library.maven:_org.ow2.asm:asm:7.0.classpath"/>
+    <path refid="library.maven:_org.ow2.asm:asm-commons:7.0.classpath"/>
+    <path refid="library.maven:_org.ow2.asm:asm-tree:7.0.classpath"/>
+    <path refid="library.maven:_org.ow2.asm:asm-analysis:7.0.classpath"/>
+    <path refid="library.maven:_org.jdom:jdom2:2.0.6.classpath"/>
+    <path refid="library.maven:_org.apache.maven.shared:maven-dependency-tree:3.0.1.classpath"/>
+    <path refid="library.maven:_org.eclipse.aether:aether-util:0.9.0.m2.classpath"/>
+    <path refid="library.maven:_org.vafer:jdependency:2.1.1.classpath"/>
+    <path refid="library.maven:_org.ow2.asm:asm-util:7.0-beta.classpath"/>
+    <path refid="library.maven:_com.google.guava:guava:22.0.classpath"/>
+    <path refid="library.maven:_com.google.code.findbugs:jsr305:1.3.9.classpath"/>
+    <path refid="library.maven:_com.google.errorprone:error_prone_annotations:2.0.18.classpath"/>
+    <path refid="library.maven:_com.google.j2objc:j2objc-annotations:1.1.classpath"/>
+    <path refid="library.maven:_org.codehaus.mojo:animal-sniffer-annotations:1.14.classpath"/>
+  </path>
+  
+  <path id="info7250_project.runtime.production.module.classpath">
+    <pathelement location="${info7250_project.output.dir}"/>
+    <path refid="library.maven:_org.apache.hadoop:hadoop-core:1.2.1.classpath"/>
+    <path refid="library.maven:_commons-cli:commons-cli:1.2.classpath"/>
+    <path refid="library.maven:_xmlenc:xmlenc:0.52.classpath"/>
+    <path refid="library.maven:_com.sun.jersey:jersey-core:1.8.classpath"/>
+    <path refid="library.maven:_com.sun.jersey:jersey-json:1.8.classpath"/>
+    <path refid="library.maven:_org.codehaus.jettison:jettison:1.1.classpath"/>
+    <path refid="library.maven:_stax:stax-api:1.0.1.classpath"/>
+    <path refid="library.maven:_com.sun.xml.bind:jaxb-impl:2.2.3-1.classpath"/>
+    <path refid="library.maven:_javax.xml.bind:jaxb-api:2.2.2.classpath"/>
+    <path refid="library.maven:_javax.xml.stream:stax-api:1.0-2.classpath"/>
+    <path refid="library.maven:_javax.activation:activation:1.1.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-core-asl:1.7.1.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-jaxrs:1.7.1.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-xc:1.7.1.classpath"/>
+    <path refid="library.maven:_com.sun.jersey:jersey-server:1.8.classpath"/>
+    <path refid="library.maven:_asm:asm:3.1.classpath"/>
+    <path refid="library.maven:_commons-io:commons-io:2.1.classpath"/>
+    <path refid="library.maven:_commons-httpclient:commons-httpclient:3.0.1.classpath"/>
+    <path refid="library.maven:_junit:junit:3.8.1.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging:1.0.3.classpath"/>
+    <path refid="library.maven:_commons-codec:commons-codec:1.4.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-math:2.1.classpath"/>
+    <path refid="library.maven:_commons-configuration:commons-configuration:1.6.classpath"/>
+    <path refid="library.maven:_commons-collections:commons-collections:3.2.1.classpath"/>
+    <path refid="library.maven:_commons-lang:commons-lang:2.4.classpath"/>
+    <path refid="library.maven:_commons-digester:commons-digester:1.8.classpath"/>
+    <path refid="library.maven:_commons-beanutils:commons-beanutils:1.7.0.classpath"/>
+    <path refid="library.maven:_commons-beanutils:commons-beanutils-core:1.8.0.classpath"/>
+    <path refid="library.maven:_commons-net:commons-net:1.4.1.classpath"/>
+    <path refid="library.maven:_org.mortbay.jetty:jetty:6.1.26.classpath"/>
+    <path refid="library.maven:_org.mortbay.jetty:servlet-api:2.5-20081211.classpath"/>
+    <path refid="library.maven:_org.mortbay.jetty:jetty-util:6.1.26.classpath"/>
+    <path refid="library.maven:_tomcat:jasper-runtime:5.5.12.classpath"/>
+    <path refid="library.maven:_tomcat:jasper-compiler:5.5.12.classpath"/>
+    <path refid="library.maven:_org.mortbay.jetty:jsp-api-2.1:6.1.14.classpath"/>
+    <path refid="library.maven:_org.mortbay.jetty:servlet-api-2.5:6.1.14.classpath"/>
+    <path refid="library.maven:_org.mortbay.jetty:jsp-2.1:6.1.14.classpath"/>
+    <path refid="library.maven:_ant:ant:1.6.5.classpath"/>
+    <path refid="library.maven:_commons-el:commons-el:1.0.classpath"/>
+    <path refid="library.maven:_net.java.dev.jets3t:jets3t:0.6.1.classpath"/>
+    <path refid="library.maven:_hsqldb:hsqldb:1.8.0.10.classpath"/>
+    <path refid="library.maven:_oro:oro:2.0.8.classpath"/>
+    <path refid="library.maven:_org.eclipse.jdt:core:3.1.1.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-mapper-asl:1.8.8.classpath"/>
+    <path refid="library.maven:_org.apache.maven.plugins:maven-shade-plugin:3.2.1.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-plugin-api:3.0.classpath"/>
+    <path refid="library.maven:_org.sonatype.sisu:sisu-inject-plexus:1.4.2.classpath"/>
+    <path refid="library.maven:_org.sonatype.sisu:sisu-inject-bean:1.4.2.classpath"/>
+    <path refid="library.maven:_org.sonatype.sisu:sisu-guice:noaop:2.1.7.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-model:3.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-core:3.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-settings:3.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-settings-builder:3.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-repository-metadata:3.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-model-builder:3.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-aether-provider:3.0.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-impl:1.7.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-spi:1.7.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-api:1.7.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-util:1.7.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-interpolation:1.14.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-classworlds:2.2.3.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-component-annotations:1.5.5.classpath"/>
+    <path refid="library.maven:_org.sonatype.plexus:plexus-sec-dispatcher:1.3.classpath"/>
+    <path refid="library.maven:_org.sonatype.plexus:plexus-cipher:1.4.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-artifact:3.0.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-utils:3.1.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven.shared:maven-artifact-transfer:0.10.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven.shared:maven-common-artifact-filters:3.0.1.classpath"/>
+    <path refid="library.maven:_org.apache.maven.shared:maven-shared-utils:3.1.0.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-api:1.7.5.classpath"/>
+    <path refid="library.maven:_org.ow2.asm:asm:7.0.classpath"/>
+    <path refid="library.maven:_org.ow2.asm:asm-commons:7.0.classpath"/>
+    <path refid="library.maven:_org.ow2.asm:asm-tree:7.0.classpath"/>
+    <path refid="library.maven:_org.ow2.asm:asm-analysis:7.0.classpath"/>
+    <path refid="library.maven:_org.jdom:jdom2:2.0.6.classpath"/>
+    <path refid="library.maven:_org.apache.maven.shared:maven-dependency-tree:3.0.1.classpath"/>
+    <path refid="library.maven:_org.eclipse.aether:aether-util:0.9.0.m2.classpath"/>
+    <path refid="library.maven:_org.vafer:jdependency:2.1.1.classpath"/>
+    <path refid="library.maven:_org.ow2.asm:asm-util:7.0-beta.classpath"/>
+    <path refid="library.maven:_com.google.guava:guava:22.0.classpath"/>
+    <path refid="library.maven:_com.google.code.findbugs:jsr305:1.3.9.classpath"/>
+    <path refid="library.maven:_com.google.errorprone:error_prone_annotations:2.0.18.classpath"/>
+    <path refid="library.maven:_com.google.j2objc:j2objc-annotations:1.1.classpath"/>
+    <path refid="library.maven:_org.codehaus.mojo:animal-sniffer-annotations:1.14.classpath"/>
+  </path>
+  
+  <path id="info7250_project.module.classpath">
+    <path refid="${module.jdk.classpath.info7250_project}"/>
+    <pathelement location="${info7250_project.output.dir}"/>
+    <path refid="library.maven:_org.apache.hadoop:hadoop-core:1.2.1.classpath"/>
+    <path refid="library.maven:_commons-cli:commons-cli:1.2.classpath"/>
+    <path refid="library.maven:_xmlenc:xmlenc:0.52.classpath"/>
+    <path refid="library.maven:_com.sun.jersey:jersey-core:1.8.classpath"/>
+    <path refid="library.maven:_com.sun.jersey:jersey-json:1.8.classpath"/>
+    <path refid="library.maven:_org.codehaus.jettison:jettison:1.1.classpath"/>
+    <path refid="library.maven:_stax:stax-api:1.0.1.classpath"/>
+    <path refid="library.maven:_com.sun.xml.bind:jaxb-impl:2.2.3-1.classpath"/>
+    <path refid="library.maven:_javax.xml.bind:jaxb-api:2.2.2.classpath"/>
+    <path refid="library.maven:_javax.xml.stream:stax-api:1.0-2.classpath"/>
+    <path refid="library.maven:_javax.activation:activation:1.1.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-core-asl:1.7.1.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-jaxrs:1.7.1.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-xc:1.7.1.classpath"/>
+    <path refid="library.maven:_com.sun.jersey:jersey-server:1.8.classpath"/>
+    <path refid="library.maven:_asm:asm:3.1.classpath"/>
+    <path refid="library.maven:_commons-io:commons-io:2.1.classpath"/>
+    <path refid="library.maven:_commons-httpclient:commons-httpclient:3.0.1.classpath"/>
+    <path refid="library.maven:_junit:junit:3.8.1.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging:1.0.3.classpath"/>
+    <path refid="library.maven:_commons-codec:commons-codec:1.4.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-math:2.1.classpath"/>
+    <path refid="library.maven:_commons-configuration:commons-configuration:1.6.classpath"/>
+    <path refid="library.maven:_commons-collections:commons-collections:3.2.1.classpath"/>
+    <path refid="library.maven:_commons-lang:commons-lang:2.4.classpath"/>
+    <path refid="library.maven:_commons-digester:commons-digester:1.8.classpath"/>
+    <path refid="library.maven:_commons-beanutils:commons-beanutils:1.7.0.classpath"/>
+    <path refid="library.maven:_commons-beanutils:commons-beanutils-core:1.8.0.classpath"/>
+    <path refid="library.maven:_commons-net:commons-net:1.4.1.classpath"/>
+    <path refid="library.maven:_org.mortbay.jetty:jetty:6.1.26.classpath"/>
+    <path refid="library.maven:_org.mortbay.jetty:servlet-api:2.5-20081211.classpath"/>
+    <path refid="library.maven:_org.mortbay.jetty:jetty-util:6.1.26.classpath"/>
+    <path refid="library.maven:_tomcat:jasper-runtime:5.5.12.classpath"/>
+    <path refid="library.maven:_tomcat:jasper-compiler:5.5.12.classpath"/>
+    <path refid="library.maven:_org.mortbay.jetty:jsp-api-2.1:6.1.14.classpath"/>
+    <path refid="library.maven:_org.mortbay.jetty:servlet-api-2.5:6.1.14.classpath"/>
+    <path refid="library.maven:_org.mortbay.jetty:jsp-2.1:6.1.14.classpath"/>
+    <path refid="library.maven:_ant:ant:1.6.5.classpath"/>
+    <path refid="library.maven:_commons-el:commons-el:1.0.classpath"/>
+    <path refid="library.maven:_net.java.dev.jets3t:jets3t:0.6.1.classpath"/>
+    <path refid="library.maven:_hsqldb:hsqldb:1.8.0.10.classpath"/>
+    <path refid="library.maven:_oro:oro:2.0.8.classpath"/>
+    <path refid="library.maven:_org.eclipse.jdt:core:3.1.1.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-mapper-asl:1.8.8.classpath"/>
+    <path refid="library.maven:_org.apache.maven.plugins:maven-shade-plugin:3.2.1.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-plugin-api:3.0.classpath"/>
+    <path refid="library.maven:_org.sonatype.sisu:sisu-inject-plexus:1.4.2.classpath"/>
+    <path refid="library.maven:_org.sonatype.sisu:sisu-inject-bean:1.4.2.classpath"/>
+    <path refid="library.maven:_org.sonatype.sisu:sisu-guice:noaop:2.1.7.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-model:3.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-core:3.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-settings:3.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-settings-builder:3.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-repository-metadata:3.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-model-builder:3.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-aether-provider:3.0.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-impl:1.7.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-spi:1.7.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-api:1.7.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-util:1.7.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-interpolation:1.14.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-classworlds:2.2.3.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-component-annotations:1.5.5.classpath"/>
+    <path refid="library.maven:_org.sonatype.plexus:plexus-sec-dispatcher:1.3.classpath"/>
+    <path refid="library.maven:_org.sonatype.plexus:plexus-cipher:1.4.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-artifact:3.0.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-utils:3.1.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven.shared:maven-artifact-transfer:0.10.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven.shared:maven-common-artifact-filters:3.0.1.classpath"/>
+    <path refid="library.maven:_org.apache.maven.shared:maven-shared-utils:3.1.0.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-api:1.7.5.classpath"/>
+    <path refid="library.maven:_org.ow2.asm:asm:7.0.classpath"/>
+    <path refid="library.maven:_org.ow2.asm:asm-commons:7.0.classpath"/>
+    <path refid="library.maven:_org.ow2.asm:asm-tree:7.0.classpath"/>
+    <path refid="library.maven:_org.ow2.asm:asm-analysis:7.0.classpath"/>
+    <path refid="library.maven:_org.jdom:jdom2:2.0.6.classpath"/>
+    <path refid="library.maven:_org.apache.maven.shared:maven-dependency-tree:3.0.1.classpath"/>
+    <path refid="library.maven:_org.eclipse.aether:aether-util:0.9.0.m2.classpath"/>
+    <path refid="library.maven:_org.vafer:jdependency:2.1.1.classpath"/>
+    <path refid="library.maven:_org.ow2.asm:asm-util:7.0-beta.classpath"/>
+    <path refid="library.maven:_com.google.guava:guava:22.0.classpath"/>
+    <path refid="library.maven:_com.google.code.findbugs:jsr305:1.3.9.classpath"/>
+    <path refid="library.maven:_com.google.errorprone:error_prone_annotations:2.0.18.classpath"/>
+    <path refid="library.maven:_com.google.j2objc:j2objc-annotations:1.1.classpath"/>
+    <path refid="library.maven:_org.codehaus.mojo:animal-sniffer-annotations:1.14.classpath"/>
+  </path>
+  
+  <path id="info7250_project.runtime.module.classpath">
+    <pathelement location="${info7250_project.testoutput.dir}"/>
+    <pathelement location="${info7250_project.output.dir}"/>
+    <path refid="library.maven:_org.apache.hadoop:hadoop-core:1.2.1.classpath"/>
+    <path refid="library.maven:_commons-cli:commons-cli:1.2.classpath"/>
+    <path refid="library.maven:_xmlenc:xmlenc:0.52.classpath"/>
+    <path refid="library.maven:_com.sun.jersey:jersey-core:1.8.classpath"/>
+    <path refid="library.maven:_com.sun.jersey:jersey-json:1.8.classpath"/>
+    <path refid="library.maven:_org.codehaus.jettison:jettison:1.1.classpath"/>
+    <path refid="library.maven:_stax:stax-api:1.0.1.classpath"/>
+    <path refid="library.maven:_com.sun.xml.bind:jaxb-impl:2.2.3-1.classpath"/>
+    <path refid="library.maven:_javax.xml.bind:jaxb-api:2.2.2.classpath"/>
+    <path refid="library.maven:_javax.xml.stream:stax-api:1.0-2.classpath"/>
+    <path refid="library.maven:_javax.activation:activation:1.1.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-core-asl:1.7.1.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-jaxrs:1.7.1.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-xc:1.7.1.classpath"/>
+    <path refid="library.maven:_com.sun.jersey:jersey-server:1.8.classpath"/>
+    <path refid="library.maven:_asm:asm:3.1.classpath"/>
+    <path refid="library.maven:_commons-io:commons-io:2.1.classpath"/>
+    <path refid="library.maven:_commons-httpclient:commons-httpclient:3.0.1.classpath"/>
+    <path refid="library.maven:_junit:junit:3.8.1.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging:1.0.3.classpath"/>
+    <path refid="library.maven:_commons-codec:commons-codec:1.4.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-math:2.1.classpath"/>
+    <path refid="library.maven:_commons-configuration:commons-configuration:1.6.classpath"/>
+    <path refid="library.maven:_commons-collections:commons-collections:3.2.1.classpath"/>
+    <path refid="library.maven:_commons-lang:commons-lang:2.4.classpath"/>
+    <path refid="library.maven:_commons-digester:commons-digester:1.8.classpath"/>
+    <path refid="library.maven:_commons-beanutils:commons-beanutils:1.7.0.classpath"/>
+    <path refid="library.maven:_commons-beanutils:commons-beanutils-core:1.8.0.classpath"/>
+    <path refid="library.maven:_commons-net:commons-net:1.4.1.classpath"/>
+    <path refid="library.maven:_org.mortbay.jetty:jetty:6.1.26.classpath"/>
+    <path refid="library.maven:_org.mortbay.jetty:servlet-api:2.5-20081211.classpath"/>
+    <path refid="library.maven:_org.mortbay.jetty:jetty-util:6.1.26.classpath"/>
+    <path refid="library.maven:_tomcat:jasper-runtime:5.5.12.classpath"/>
+    <path refid="library.maven:_tomcat:jasper-compiler:5.5.12.classpath"/>
+    <path refid="library.maven:_org.mortbay.jetty:jsp-api-2.1:6.1.14.classpath"/>
+    <path refid="library.maven:_org.mortbay.jetty:servlet-api-2.5:6.1.14.classpath"/>
+    <path refid="library.maven:_org.mortbay.jetty:jsp-2.1:6.1.14.classpath"/>
+    <path refid="library.maven:_ant:ant:1.6.5.classpath"/>
+    <path refid="library.maven:_commons-el:commons-el:1.0.classpath"/>
+    <path refid="library.maven:_net.java.dev.jets3t:jets3t:0.6.1.classpath"/>
+    <path refid="library.maven:_hsqldb:hsqldb:1.8.0.10.classpath"/>
+    <path refid="library.maven:_oro:oro:2.0.8.classpath"/>
+    <path refid="library.maven:_org.eclipse.jdt:core:3.1.1.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-mapper-asl:1.8.8.classpath"/>
+    <path refid="library.maven:_org.apache.maven.plugins:maven-shade-plugin:3.2.1.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-plugin-api:3.0.classpath"/>
+    <path refid="library.maven:_org.sonatype.sisu:sisu-inject-plexus:1.4.2.classpath"/>
+    <path refid="library.maven:_org.sonatype.sisu:sisu-inject-bean:1.4.2.classpath"/>
+    <path refid="library.maven:_org.sonatype.sisu:sisu-guice:noaop:2.1.7.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-model:3.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-core:3.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-settings:3.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-settings-builder:3.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-repository-metadata:3.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-model-builder:3.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-aether-provider:3.0.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-impl:1.7.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-spi:1.7.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-api:1.7.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-util:1.7.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-interpolation:1.14.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-classworlds:2.2.3.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-component-annotations:1.5.5.classpath"/>
+    <path refid="library.maven:_org.sonatype.plexus:plexus-sec-dispatcher:1.3.classpath"/>
+    <path refid="library.maven:_org.sonatype.plexus:plexus-cipher:1.4.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-artifact:3.0.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-utils:3.1.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven.shared:maven-artifact-transfer:0.10.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven.shared:maven-common-artifact-filters:3.0.1.classpath"/>
+    <path refid="library.maven:_org.apache.maven.shared:maven-shared-utils:3.1.0.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-api:1.7.5.classpath"/>
+    <path refid="library.maven:_org.ow2.asm:asm:7.0.classpath"/>
+    <path refid="library.maven:_org.ow2.asm:asm-commons:7.0.classpath"/>
+    <path refid="library.maven:_org.ow2.asm:asm-tree:7.0.classpath"/>
+    <path refid="library.maven:_org.ow2.asm:asm-analysis:7.0.classpath"/>
+    <path refid="library.maven:_org.jdom:jdom2:2.0.6.classpath"/>
+    <path refid="library.maven:_org.apache.maven.shared:maven-dependency-tree:3.0.1.classpath"/>
+    <path refid="library.maven:_org.eclipse.aether:aether-util:0.9.0.m2.classpath"/>
+    <path refid="library.maven:_org.vafer:jdependency:2.1.1.classpath"/>
+    <path refid="library.maven:_org.ow2.asm:asm-util:7.0-beta.classpath"/>
+    <path refid="library.maven:_com.google.guava:guava:22.0.classpath"/>
+    <path refid="library.maven:_com.google.code.findbugs:jsr305:1.3.9.classpath"/>
+    <path refid="library.maven:_com.google.errorprone:error_prone_annotations:2.0.18.classpath"/>
+    <path refid="library.maven:_com.google.j2objc:j2objc-annotations:1.1.classpath"/>
+    <path refid="library.maven:_org.codehaus.mojo:animal-sniffer-annotations:1.14.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.info7250_project">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.info7250_project">
+    <patternset refid="excluded.from.module.info7250_project"/>
+  </patternset>
+  
+  <path id="info7250_project.module.sourcepath">
+    <dirset dir="${module.info7250_project.basedir}">
+      <include name="src/main/java"/>
+      <include name="src/main/resources"/>
+    </dirset>
+  </path>
+  
+  <path id="info7250_project.module.test.sourcepath">
+    <dirset dir="${module.info7250_project.basedir}">
+      <include name="src/test/java"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.info7250_project" depends="compile.module.info7250_project.production,compile.module.info7250_project.tests" description="Compile module INFO7250_Project"/>
+  
+  <target name="compile.module.info7250_project.production" depends="register.custom.compilers" description="Compile module INFO7250_Project; production classes">
+    <mkdir dir="${info7250_project.output.dir}"/>
+    <javac2 destdir="${info7250_project.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.info7250_project}/javac">
+      <compilerarg line="${compiler.args.info7250_project}"/>
+      <bootclasspath refid="info7250_project.module.bootclasspath"/>
+      <classpath refid="info7250_project.module.production.classpath"/>
+      <src refid="info7250_project.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.info7250_project"/>
+    </javac2>
+    
+    <copy todir="${info7250_project.output.dir}">
+      <fileset dir="${module.info7250_project.basedir}/src/main/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.info7250_project.basedir}/src/main/resources">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.info7250_project.tests" depends="register.custom.compilers,compile.module.info7250_project.production" description="compile module INFO7250_Project; test classes" unless="skip.tests">
+    <mkdir dir="${info7250_project.testoutput.dir}"/>
+    <javac2 destdir="${info7250_project.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.info7250_project}/javac">
+      <compilerarg line="${compiler.args.info7250_project}"/>
+      <bootclasspath refid="info7250_project.module.bootclasspath"/>
+      <classpath refid="info7250_project.module.classpath"/>
+      <src refid="info7250_project.module.test.sourcepath"/>
+      <patternset refid="excluded.from.compilation.info7250_project"/>
+    </javac2>
+    
+    <copy todir="${info7250_project.testoutput.dir}">
+      <fileset dir="${module.info7250_project.basedir}/src/test/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="clean.module.info7250_project" description="cleanup module">
+    <delete dir="${info7250_project.output.dir}"/>
+    <delete dir="${info7250_project.testoutput.dir}"/>
+  </target>
+</project>

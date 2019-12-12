@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="INFO7250_Project:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b73b5f38-44f8-4e76-a1e3-6c67dd28a687" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UoKf7u6JRR9qpRCPfsBAReDI9v" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="info7250_project" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/files" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.17404127" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/files" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MyBloomFilter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Project.MyBloomFilter" />
+      <module name="INFO7250_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Project.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MyBloomFilter" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b73b5f38-44f8-4e76-a1e3-6c67dd28a687" name="Default Changelist" comment="" />
+      <created>1576017607437</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576017607437</updated>
+      <workItem from="1576017613492" duration="15009000" />
+      <workItem from="1576099761730" duration="1060000" />
+      <workItem from="1576103109676" duration="654000" />
+      <workItem from="1576104575639" duration="623000" />
+      <workItem from="1576107939978" duration="297000" />
+      <workItem from="1576120928577" duration="10575000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="588" y="149" width="800" height="677" key="#Project_Structure" timestamp="1576123783645">
+      <screen x="67" y="27" width="1853" height="923" />
+    </state>
+    <state x="588" y="149" width="800" height="677" key="#Project_Structure/67.27.1853.923@67.27.1853.923" timestamp="1576123783645" />
+    <state x="721" y="273" width="525" height="428" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1576123461119">
+      <screen x="67" y="27" width="1853" height="923" />
+    </state>
+    <state x="721" y="273" width="525" height="428" key="#com.intellij.ide.util.TreeClassChooserDialog/67.27.1853.923@67.27.1853.923" timestamp="1576123461119" />
+    <state x="721" y="245" width="524" height="484" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1576122884395">
+      <screen x="67" y="27" width="1853" height="923" />
+    </state>
+    <state x="721" y="245" width="524" height="484" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/67.27.1853.923@67.27.1853.923" timestamp="1576122884395" />
+    <state x="776" y="245" width="735" height="484" key="FileChooserDialogImpl" timestamp="1576123757082">
+      <screen x="67" y="27" width="1853" height="923" />
+    </state>
+    <state x="776" y="245" width="735" height="484" key="FileChooserDialogImpl/67.27.1853.923@67.27.1853.923" timestamp="1576123757082" />
+    <state width="1807" height="236" key="GridCell.Tab.0.bottom" timestamp="1576033767858">
+      <screen x="67" y="27" width="1853" height="923" />
+    </state>
+    <state width="1807" height="236" key="GridCell.Tab.0.bottom/67.27.1853.923@67.27.1853.923" timestamp="1576033767858" />
+    <state width="1807" height="236" key="GridCell.Tab.0.center" timestamp="1576033767857">
+      <screen x="67" y="27" width="1853" height="923" />
+    </state>
+    <state width="1807" height="236" key="GridCell.Tab.0.center/67.27.1853.923@67.27.1853.923" timestamp="1576033767857" />
+    <state width="1807" height="236" key="GridCell.Tab.0.left" timestamp="1576033767856">
+      <screen x="67" y="27" width="1853" height="923" />
+    </state>
+    <state width="1807" height="236" key="GridCell.Tab.0.left/67.27.1853.923@67.27.1853.923" timestamp="1576033767856" />
+    <state width="1807" height="236" key="GridCell.Tab.0.right" timestamp="1576033767858">
+      <screen x="67" y="27" width="1853" height="923" />
+    </state>
+    <state width="1807" height="236" key="GridCell.Tab.0.right/67.27.1853.923@67.27.1853.923" timestamp="1576033767858" />
+    <state x="476" y="65" width="1024" height="845" key="SettingsEditor" timestamp="1576131158456">
+      <screen x="67" y="27" width="1853" height="923" />
+    </state>
+    <state x="476" y="65" width="1024" height="845" key="SettingsEditor/67.27.1853.923@67.27.1853.923" timestamp="1576131158456" />
+    <state x="649" y="315" key="com.intellij.ide.util.TipDialog" timestamp="1576121683801">
+      <screen x="67" y="27" width="1853" height="923" />
+    </state>
+    <state x="649" y="315" key="com.intellij.ide.util.TipDialog/67.27.1853.923@67.27.1853.923" timestamp="1576121683801" />
+    <state x="302" y="191" width="1372" height="592" key="new project wizard" timestamp="1576126443742">
+      <screen x="67" y="27" width="1853" height="923" />
+    </state>
+    <state x="302" y="191" width="1372" height="592" key="new project wizard/67.27.1853.923@67.27.1853.923" timestamp="1576126443742" />
+  </component>
+</project>

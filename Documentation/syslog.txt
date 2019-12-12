@@ -1,0 +1,25 @@
+2019-12-11 23:33:24,741 INFO org.apache.hadoop.yarn.client.RMProxy (main): Connecting to ResourceManager at ip-172-31-43-148.ec2.internal/172.31.43.148:8032
+2019-12-11 23:33:24,969 INFO org.apache.hadoop.yarn.client.AHSProxy (main): Connecting to Application History server at ip-172-31-43-148.ec2.internal/172.31.43.148:10200
+2019-12-11 23:33:25,646 WARN org.apache.hadoop.mapreduce.JobResourceUploader (main): Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2019-12-11 23:33:25,654 INFO org.apache.hadoop.mapreduce.JobResourceUploader (main): Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/hadoop/.staging/job_1576106450442_0001
+2019-12-11 23:33:26,439 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat (main): Total input files to process : 1
+2019-12-11 23:33:26,447 INFO com.hadoop.compression.lzo.GPLNativeCodeLoader (main): Loaded native gpl library
+2019-12-11 23:33:26,449 INFO com.hadoop.compression.lzo.LzoCodec (main): Successfully loaded & initialized native-lzo library [hadoop-lzo rev dd4c76892e34528885afc09320477261050f9ab5]
+2019-12-11 23:33:26,976 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): number of splits:1
+2019-12-11 23:33:26,992 INFO org.apache.hadoop.conf.Configuration.deprecation (main): yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+2019-12-11 23:33:27,100 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): Submitting tokens for job: job_1576106450442_0001
+2019-12-11 23:33:27,102 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): Executing with tokens: []
+2019-12-11 23:33:27,246 INFO org.apache.hadoop.conf.Configuration (main): resource-types.xml not found
+2019-12-11 23:33:27,247 INFO org.apache.hadoop.yarn.util.resource.ResourceUtils (main): Unable to find 'resource-types.xml'.
+2019-12-11 23:33:27,658 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl (main): Submitted application application_1576106450442_0001
+2019-12-11 23:33:27,686 INFO org.apache.hadoop.mapreduce.Job (main): The url to track the job: http://ip-172-31-43-148.ec2.internal:20888/proxy/application_1576106450442_0001/
+2019-12-11 23:33:27,686 INFO org.apache.hadoop.mapreduce.Job (main): Running job: job_1576106450442_0001
+2019-12-11 23:33:38,772 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1576106450442_0001 running in uber mode : false
+2019-12-11 23:33:38,773 INFO org.apache.hadoop.mapreduce.Job (main):  map 0% reduce 0%
+2019-12-11 23:33:43,822 INFO org.apache.hadoop.mapreduce.Job (main): Task Id : attempt_1576106450442_0001_m_000000_0, Status : FAILED
+2019-12-11 23:33:50,866 INFO org.apache.hadoop.mapreduce.Job (main): Task Id : attempt_1576106450442_0001_m_000000_1, Status : FAILED
+2019-12-11 23:33:59,901 INFO org.apache.hadoop.mapreduce.Job (main): Task Id : attempt_1576106450442_0001_m_000000_2, Status : FAILED
+2019-12-11 23:34:06,928 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 100%
+2019-12-11 23:34:07,078 INFO org.apache.hadoop.mapred.ClientServiceDelegate (main): Application state is completed. FinalApplicationStatus=FAILED. Redirecting to job history server
+2019-12-11 23:34:07,264 INFO org.apache.hadoop.mapred.ClientServiceDelegate (main): Application state is completed. FinalApplicationStatus=FAILED. Redirecting to job history server
+2019-12-11 23:34:07,369 INFO org.apache.hadoop.mapred.ClientServiceDelegate (main): Application state is completed. FinalApplicationStatus=FAILED. Redirecting to job history server
